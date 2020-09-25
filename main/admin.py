@@ -1,3 +1,14 @@
 from django.contrib import admin
+from .models import *
 
-# Register your models here.
+
+
+admin.site.register(Post)
+admin.site.register(PostGallery)
+admin.site.register(Restaurant)
+admin.site.register(ResturantGallery)
+admin.site.register(RestaurantAdmin)
+admin.site.register(FoodItem)
+admin.site.register(PostComent)
+admin.site.register(FoodOrder)
+
