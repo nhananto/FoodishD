@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FoodishD</title>
+    <title>Holiday - Tours</title>
     <!--
 Holiday Template
 http://www.templatemo.com/tm-475-holiday
@@ -41,9 +41,9 @@ http://www.templatemo.com/tm-475-holiday
                     </div>
                     <nav class="tm-nav">
                         <ul>
-                            <li><a href="{% url 'home' %}" class="active">Home</a></li>
+                            <li><a href="{% url 'home' %}">Home</a></li>
                             <li><a href="{% url 'about' %}">About</a></li>
-                            <li><a href="{% url 'tour' %}">Our Tours</a></li>
+                            <li><a href="{% url 'tour' %}" class="active">Our Tours</a></li>
                             <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </nav>
@@ -59,11 +59,11 @@ http://www.templatemo.com/tm-475-holiday
             <ul class="slides">
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
-                        <p class="tm-banner-subtitle">For Your Holidays</p>
+                        <h1 class="tm-banner-title">Find <span class="tm-yellow-text">Tour</span> Programs</h1>
+                        <p class="tm-banner-subtitle">For Your Destinations</p>
                         <a href="#more" class="tm-banner-link">Learn More</a>
                     </div>
-                    <img src="{% static 'main/img/index/banner-1.jpg' %}" alt="Image" />
+                    <img src="{% static 'main/img/index/banner-2.jpg' %}" />
                 </li>
                 <li>
                     <div class="tm-banner-inner">
@@ -71,7 +71,7 @@ http://www.templatemo.com/tm-475-holiday
                         <p class="tm-banner-subtitle">Wonderful Destinations</p>
                         <a href="#more" class="tm-banner-link">Learn More</a>
                     </div>
-                    <img src="{% static 'main/img/index/banner-3.jpg' %}" alt="Image" />
+                    <img src="{% static 'main/img/index/banner-3.jpg' %}" />
                 </li>
                 <li>
                     <div class="tm-banner-inner">
@@ -79,7 +79,7 @@ http://www.templatemo.com/tm-475-holiday
                         <p class="tm-banner-subtitle">Velit Auctor</p>
                         <a href="#more" class="tm-banner-link">Learn More</a>
                     </div>
-                    <img src="{% static 'main/img/index/banner-3.jpg' %}" alt="Image" />
+                    <img src="{% static 'main/img/index/banner-1.jpg' %}" />
                 </li>
             </ul>
         </div>
@@ -227,7 +227,7 @@ http://www.templatemo.com/tm-475-holiday
                         <hr>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h2 class="tm-section-title">Lorem Ipsum Dolor</h2>
+                        <h2 class="tm-section-title">Our Tours</h2>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3">
                         <hr>
@@ -235,59 +235,93 @@ http://www.templatemo.com/tm-475-holiday
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">
-                        <img src="{% static 'main/img/index/index-03.jpg' %}" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
-                        <p class="tm-date">28 March 2016</p>
-                        <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tm-tours-box-1">
+                        <img src="{% static 'main/img/index/tours-03.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-1-info">
+                            <div class="tm-tours-box-1-info-left">
+                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
+                                <p class="gray-text">28 March 2084</p>
+                            </div>
+                            <div class="tm-tours-box-1-info-right">
+                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                            </div>
+                        </div>
+                        <div class="tm-tours-box-1-link">
+                            <div class="tm-tours-box-1-link-left">
+                                Duration: 8 days
+                            </div>
+                            <a href="#" class="tm-tours-box-1-link-right">
+								$2,200								
+							</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">
-                        <img src="{% static 'main/img/index/index-04.jpg' %}" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
-                        <p class="tm-date">26 March 2016</p>
-                        <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tm-tours-box-1">
+                        <img src="{% static 'main/img/index/tours-04.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-1-info">
+                            <div class="tm-tours-box-1-info-left">
+                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
+                                <p class="gray-text">26 March 2084</p>
+                            </div>
+                            <div class="tm-tours-box-1-info-right">
+                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                            </div>
+                        </div>
+                        <div class="tm-tours-box-1-link">
+                            <div class="tm-tours-box-1-link-left">
+                                Duration: 9 days
+                            </div>
+                            <a href="#" class="tm-tours-box-1-link-right">
+								$1,800								
+							</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2">
-                        <img src="{%static 'main/img/index/index-05.jpg' %}" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
-                        <p class="tm-date">24 March 2016</p>
-                        <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tm-tours-box-1">
+                        <img src="{% static 'main/img/index/tours-05.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-1-info">
+                            <div class="tm-tours-box-1-info-left">
+                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
+                                <p class="gray-text">24 March 2084</p>
+                            </div>
+                            <div class="tm-tours-box-1-info-right">
+                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                            </div>
+                        </div>
+                        <div class="tm-tours-box-1-link">
+                            <div class="tm-tours-box-1-link-left">
+                                Duration: 8 days
+                            </div>
+                            <a href="#" class="tm-tours-box-1-link-right">
+								$1,600								
+							</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                    <div class="tm-home-box-2 tm-home-box-2-right">
-                        <img src="{% static 'main/img/index/index-06.jpg' %}" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
-                        <p class="tm-date">22 March 2016</p>
-                        <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
-                            <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="tm-tours-box-1">
+                        <img src="{% static 'main/img/index/tours-06.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-1-info">
+                            <div class="tm-tours-box-1-info-left">
+                                <p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>
+                                <p class="gray-text">22 March 2084</p>
+                            </div>
+                            <div class="tm-tours-box-1-info-right">
+                                <p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>
+                            </div>
+                        </div>
+                        <div class="tm-tours-box-1-link">
+                            <div class="tm-tours-box-1-link-left">
+                                Duration: 5 days
+                            </div>
+                            <a href="#" class="tm-tours-box-1-link-right">
+								$1,200								
+							</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="home-description">Holiday is free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose. You do not need to provide a credit link to us. If you have any question, feel free to <a href="http://www.facebook.com/templatemo"
-                            target="_parent">contact us</a>. Credit goes to <a rel="nofollow" href="http://unsplash.com" target="_parent">Unspash</a> for images used in this template.</p>
                 </div>
             </div>
         </div>
@@ -302,71 +336,64 @@ http://www.templatemo.com/tm-475-holiday
                         <hr>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6">
-                        <h2 class="tm-section-title">Popular Packages</h2>
+                        <h2 class="tm-section-title">Special Packages</h2>
                     </div>
                     <div class="col-lg-4 col-md-3 col-sm-3">
                         <hr>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="{% static 'main/img/index/index-07.jpg' %}" alt="image" class="img-responsive">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-tours-box-2">
+                        <img src="{% static 'main/img/index/index-03.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-2-info">
+                            <h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                            <img src="{% static 'main/img/index/rating.png' %}" alt="image" class="margin-bottom-5">
+                            <p>28 March 2084</p>
                         </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="tm-tours-box-2-link">Book Now</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="{% static 'main/img/index/index-08.jpg' %}" alt="image" class="img-responsive">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-tours-box-2">
+                        <img src="{% static 'main/img/index/index-04.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-2-info">
+                            <h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                            <img src="{% static 'main/img/index/rating.png' %}" alt="image" class="margin-bottom-5">
+                            <p>26 March 2084</p>
                         </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="tm-tours-box-2-link">Book Now</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="{% static 'main/img/index/index-09.jpg' %}" alt="image" class="img-responsive">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-tours-box-2">
+                        <img src="{% static 'main/img/index/index-05.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-2-info">
+                            <h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                            <img src="{% static 'main/img/index/rating.png' %}" alt="image" class="margin-bottom-5">
+                            <p>24 March 2084</p>
                         </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="tm-tours-box-2-link">Book Now</a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="{% static 'main/img/index/index-10.jpg' %}" alt="image" class="img-responsive">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                    <div class="tm-tours-box-2">
+                        <img src="{% static 'main/img/index/index-06.jpg' %}" alt="image" class="img-responsive">
+                        <div class="tm-tours-box-2-info">
+                            <h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                            <img src="{% static 'main/img/index/rating.png' %}" alt="image" class="margin-bottom-5">
+                            <p>22 March 2084</p>
                         </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
-                            </div>
-                        </div>
+                        <a href="#" class="tm-tours-box-2-link">Book Now</a>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="home-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsaipsu m velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+                        Sed non mauris vitae erat.
+                    </p>
                 </div>
             </div>
         </div>
@@ -387,10 +414,6 @@ http://www.templatemo.com/tm-475-holiday
     <script type="text/javascript" src="{% static 'main/js/index/bootstrap-datetimepicker.min.js' %}"></script>
     <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
     <script type="text/javascript" src="{% static 'main/js/index/jquery.flexslider-min.js' %}"></script>
-    <!--
-	<script src="js/froogaloop.js"></script>
-	<script src="js/jquery.fitvid.js"></script>
--->
     <script type="text/javascript" src="{% static 'main/js/index/templatemo-script.js' %}"></script>
     <!-- Templatemo Script -->
     <script>
@@ -424,59 +447,9 @@ http://www.templatemo.com/tm-475-holiday
 
         // Load Flexslider when everything is loaded.
         $(window).load(function() {
-            // Vimeo API nonsense
-
-            /*
-            			  var player = document.getElementById('player_1');
-            			  $f(player).addEvent('ready', ready);
-            			 
-            			  function addEvent(element, eventName, callback) {
-            			    if (element.addEventListener) {
-            			      element.addEventListener(eventName, callback, false)
-            			    } else {
-            			      element.attachEvent(eventName, callback, false);
-            			    }
-            			  }
-            			 
-            			  function ready(player_id) {
-            			    var froogaloop = $f(player_id);
-            			    froogaloop.addEvent('play', function(data) {
-            			      $('.flexslider').flexslider("pause");
-            			    });
-            			    froogaloop.addEvent('pause', function(data) {
-            			      $('.flexslider').flexslider("play");
-            			    });
-            			  }
-            */
-
-
-
-            // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
-            /*
-
-            			  $(".flexslider")
-            			    .fitVids()
-            			    .flexslider({
-            			      animation: "slide",
-            			      useCSS: false,
-            			      animationLoop: false,
-            			      smoothHeight: true,
-            			      controlNav: false,
-            			      before: function(slider){
-            			        $f(player).api('pause');
-            			      }
-            			  });
-            */
-
-
-
-
-            //	For images only
             $('.flexslider').flexslider({
                 controlNav: false
             });
-
-
         });
     </script>
 </body>
