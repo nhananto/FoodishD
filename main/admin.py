@@ -9,6 +9,6 @@ admin.site.register(Restaurant)
 admin.site.register(ResturantGallery)
 admin.site.register(RestaurantAdmin)
 admin.site.register(FoodItem)
-admin.site.register(PostComent)
+admin.site.register(PostComment)
 admin.site.register(FoodOrder)
 

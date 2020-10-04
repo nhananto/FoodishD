@@ -6,10 +6,13 @@ from main.models import *
 
 def index(request):
 
-    all_post = Post.objects.all() 
+    all_post = Post.objects.all()
+    restaurant = Restaurant.objects.all()
+
 
     context = {
-        'posts' : all_post
+        'posts' : all_post,
+        'retaurant' : restaurant
     }
     return render(request, 'main/index.html', context)
 

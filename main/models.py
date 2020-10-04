@@ -18,6 +18,7 @@ class Post(models.Model):
     price = models.FloatField(max_length=50, blank=True)
     restaurant_name = models.CharField(max_length=250, blank=True)
     rating = models.FloatField(max_length=50, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
     up_vote = models.ManyToManyField(User, related_name='up_vote', blank=True)
     down_vote = models.ManyToManyField(
         User, related_name='down_vote', blank=True)
@@ -53,6 +54,7 @@ class Restaurant(models.Model):
     about_us= models.CharField(max_length=250, blank=True)
     discount= models.FloatField(max_length=50, blank=True)
     time_schedule = models.CharField(max_length=50, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
     
     
     def __str__(self):
@@ -73,25 +75,26 @@ class RestaurantAdmin(models.Model):
 
 
 class FoodItem(models.Model):
-     AVAILABILITY = [
+    AVAILABILITY = [
         ('Yes', 'Yes'),
         ('No', 'No')
     ]
-     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
-     name = models.CharField(max_length=250, blank=True)
-     image = models.ImageField(
-         upload_to='food', max_length=250, default='food/default.jpg')
-     description = models.CharField(max_length=250, blank=True)
-     address = models.CharField(max_length=100, blank=True)
-     price = models.FloatField(max_length=50, blank=True)
-     discount= models.FloatField(max_length=50, blank=True)
-     quantity = models.IntegerField(blank=True)
-     food_available = models.CharField(choices=AVAILABILITY, max_length=50, blank=True)
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    name = models.CharField(max_length=250, blank=True)
+    image = models.ImageField(
+        upload_to='food', max_length=250, default='food/default.jpg')
+    description = models.CharField(max_length=250, blank=True)
+    address = models.CharField(max_length=100, blank=True)
+    price = models.FloatField(max_length=50, blank=True)
+    discount= models.FloatField(max_length=50, blank=True)
+    quantity = models.IntegerField(blank=True)
+    food_available = models.CharField(choices=AVAILABILITY, max_length=50, blank=True)
 
-class PostComent(models.Model):
+class PostComment(models.Model):
     username = models.ForeignKey(User, on_delete=models.CASCADE)
     comment = models.CharField(max_length=500, blank=True)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
 
 
 class FoodOrder(models.Model):
@@ -101,3 +104,5 @@ class FoodOrder(models.Model):
     vat = models.FloatField(max_length=50, blank=True)
     Delivery_charge = models.FloatField(max_length=50, blank=True)
     total_price = models.FloatField(max_length=50, blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    
